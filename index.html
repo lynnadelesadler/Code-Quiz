@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>Coding Challenge Quiz</title>
+</head>
+
+<body>
+  <header class="container-fluid mb-5">
+    <!-- div for scores link and time -->
+    <div>
+      <!-- <a href="">View Highscores</a> -->
+      <button id="view-scores" type="button" class="btn">View High Scores</button>
+    </div>
+    <!-- Timer -->
+    <div>
+      <p class=time>Time:</p>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main>
+    <!-- Container for Intro, Questions, Answers -->
+    <section class="container">
+      <!-- Section for H1 and Welcome message // Hide upon Start-->
+      <div id="title">
+        <h1>Coding Quiz Challenge</h1>
+        <p id=instructions>Try to answer the following code-related questions within the time limit. Keep in mind
+          that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button id="start" type="button">Start Quiz</button></p>
+      </div>
+    </section>
+    <!-- Section for Question and Answers // Show upon Start-->
+    <section id="questions">
+      <div>
+        <h2 id="question">Here is the question</h2>
+        <ul>
+          <li><button id="answer1" value="0" type="button" class="ansButton">Answer1</button></li>
+          <li><button id="answer2" value="1" type="button" class="ansButton">Answer2</button></li>
+          <li><button id="answer3" value="2" type="button" class="ansButton">Answer3</button></li>
+          <li><button id="answer4" value="3" type="button" class="ansButton">Answer4</button></li>
+        </ul>
+        <!-- Correct or Wrong will be added via JS -->
+        <div id="questionAnswer"></div>
+      </div>
+    </section>
+
+    <!-- Section for Final Score and Name -->
+    <section id="final">
+      <div>
+        <h2>All done!</h2>
+        <p>Your final score is: <span id="score">0</span></p>
+        <p>Enter initials: <span><input placeholder="initials" id="initials" /></span>
+          <button id="submit-score">Submit</button>
+        </p>
+      </div>
+    </section>
+
+    <!-- Section for High Scores -->
+    <section id="highscores">
+      <div>
+        <h2>High Scores</h2>
+        <!-- High scores should be added as ordered list -->
+        <ol id="score-list">
+          <!-- <li></li> -->
+        </ol>
+        <button id="goback">Go back</button>
+        <button id="clearscores">Clear scores</button>
+      </div>
+    </section>
+</body>
+</main>
+<script src="./assets/script.js"></script>
+</body>
+
+</html>
