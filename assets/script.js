@@ -156,8 +156,16 @@ function addScore(event) {
     event.preventDefault();
     finalEl.style.display = "none";
     highscoresEl.style.display = "block";
-    var init = initialsInput.value.toUpperCase();
-    scoreList.push({ initials: init, score: timeLeft });
+    var letters = /^[A-Za-z]+$/;
+    if (initialsInput.value.match(letters)) {
+        var init = initialsInput.value.toUpperCase();
+        scoreList.push({ initials: init, score: timeLeft });
+    }
+    else {
+        //come back to update alert or add context display 
+        highscoresEl.style.display = "none";
+        finalEl.style.display = "block";
+    }
 
 
     // sort the scores in decending order
