@@ -85,8 +85,6 @@ For help with this webpage please contact
 ## Roadmap
 Check back to this page as enhacements could be made for usability and optimized display.
 
-Development WIP to ensure the score intials input only allows alaphabetic text.
-
 ## Authors and acknowledgment
 
 Sourcecode credit to be given to Lynn Sadler. 
