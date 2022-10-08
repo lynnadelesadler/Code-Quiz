@@ -29,6 +29,7 @@ This Coding Quiz webpage is a series of multiple-choice questions realted to Jav
 
 The Coding Quiz webpage can be accessed at the following URL... 
 
+https://lynnadelesadler.github.io/Code-Quiz/
 
 
 The URL of the GitHub repository ...
