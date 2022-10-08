@@ -8,7 +8,7 @@
 html,
 body {
     height: 100%;
-    width: 100%;
+    min-width: fit-content;
 }
 
 
@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     padding: 20px;
     height: 100px;
+    min-width: fit-content;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #dac0f6;
     color: #050505;
